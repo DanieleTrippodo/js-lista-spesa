@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'it.spesasmart.mvp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'it.spesasmart.mvp'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '0.1.0-demo'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
